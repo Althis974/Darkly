@@ -15,3 +15,10 @@
   Vous allez pouvoir découvrir OWASP, qui est, ni plus ni moins, le plus gros projet de sécurité web à ce jour.
 
   Vous allez aussi comprendre ce que beaucoup de frameworks font de manière automatique et complètement transparente pour vous.
+
+## Authors
+
+[Lossy Roméo](https://github.com/Althis974)
+
+[Epalle Cyrille](https://github.com/cepalle)
+
