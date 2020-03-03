@@ -1,0 +1,19 @@
+First, we click on nsa logo and go on the page "page=media&src=nsa"
+
+After some tests replacing "nsa" with some value like "..", we find out weird behaviour.
+
+Digging into this issue and doing some search, we find out this resource:
+"https://owasp.org/www-community/attacks/xss/"
+
+Then, we try all the classic test to find out XSS issue.
+
+Finally, this one worked:
+"src=data:text/html;base64,PHNjcmlwdD5hbGVydDwvc2NyaXB0Pg=="
+
+Last but not least, doing some additional search about why it worked and we find:
+"https://www.paladion.net/blogs/bypass-xss-filters-using-data-uris"
+And get the flag.
+
+# RESOLUTION
+
+Add a filter to disable capacity of using "data:" in url.
