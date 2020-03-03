@@ -1,0 +1,6 @@
+on modifie la redirection:
+http://192.168.56.103/index.php?page=redirect&site=invalide_dir
+
+# RESOLUTION
+
+Check the input redirection.
