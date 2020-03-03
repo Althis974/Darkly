@@ -1,0 +1,9 @@
+In http://192.168.56.103/index.php?page=feedback
+
+use "script" in name
+
+# RESOLUTION
+
+Protect string from XSS attack. Use existing function that take care of these cases.
+
+Example: https://www.checkmarx.com/2017/10/09/3-ways-prevent-xss/
