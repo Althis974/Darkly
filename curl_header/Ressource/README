@@ -1,0 +1,20 @@
+First, in the footer, we can access to a page by clicking on the copyright.
+
+Then, by inspecting element, we can see in comment that we need to use the browser
+"ft_bornToSec" and "cumming from nsa".
+
+After many research about what happens in browser when clicking on a link,
+we finally get this source:
+
+"https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending"
+
+Finally, we discover that we have to change the user-agent and the referrer.
+Last but not least, simple research on curl and this do the job:
+
+"curl -H "User-Agent:ft_bornToSec" --referer https://www.nsa.gov/ http://192.168.56.103/\?page\=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c | grep flag"
+And get the flag.
+
+# RESOLUTION
+
+We don't really see what security issue it submits here.
+
