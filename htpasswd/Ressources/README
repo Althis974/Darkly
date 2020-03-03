@@ -1,0 +1,14 @@
+avec ZAP de l'OWASP on trouve http://192.168.56.102/robots.txt
+dans robots.txt il y a:
+User-agent: *
+Disallow: /whatever
+Disallow: /.hidden
+
+dans /whatever il y a le fichier htpasswd et dans 
+htpasswd il y a: root:8621ffdbc5698829397d97767ac13db3
+avec un md5 reverse de 8621ffdbc5698829397d97767ac13db3 on obtient dragon.
+on peut utiliser root:dragon dans la page /admin
+
+# RESOLUTION
+
+Don't let access to useless/sensitives files.
