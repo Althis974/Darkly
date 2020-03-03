@@ -1,0 +1,13 @@
+First, using zap tool of OWASP, scanned all urls of the ".hidden" folder.
+
+Then, we get all "README" files with a curl command:
+"for val in ${StringArray[@]}; do
+   curl $val
+done"
+
+Finally, we filter all messages to finally find a hash.
+And get the flag.
+
+# RESOLUTION
+
+Don't let access to useless/sensitives files.
