@@ -1,0 +1,23 @@
+First, on the upload page, we detect that only jpg file is accepted.
+
+Then we manage to send another type of file, like php script.
+
+After many try and resources, we find out those:
+
+https://medium.com/@petehouston/upload-files-with-curl-93064dcccc76
+https://www.lynxbee.com/how-to-upload-file-image-using-curl-command-line/
+
+Finally, we build our curl command:
+"curl -F "Upload=Upload" -F 'uploaded=@file.php;type=image/jpg' http://192.168.56.101/\?page\=upload"
+
+Last but not least, we add
+" | grep flag"
+And get the flag.
+
+# RESOLUTION
+
+Add more checks against malicious files.
+Examples:
+1. Rename file
+2. Check size
+3. https://openclassrooms.com/fr/courses/2091901-protegez-vous-efficacement-contre-les-failles-web/2680177-la-faille-upload
