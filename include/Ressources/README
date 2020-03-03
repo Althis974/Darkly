@@ -1,0 +1,22 @@
+First, on any page with "index.php?page=", we see that add ".." displays a dialog
+box with "Wtf ?".
+
+Then, adding "/.." displays a new dialog box with "Wrong again".
+
+So we just kept doing this until the dialog box displays always the same message:
+"You can do it :]"
+
+Some research and we find out that it was an local include break:
+https://www.funinformatique.com/faille-include-comment-lexploiter-et-sen-proteger/
+
+Finally, we add exactly :
+"../../../../../../../etc/passwd"
+
+Last but not least, a new dialog box appears with a new message.
+And get the flag.
+
+# RESOLUTION
+
+- Test all pages and if it happens, redirect to home page.
+- In php4, put "allow_url_fopen" to "off".
+- In php5, put "allow_url_include" to "off".
