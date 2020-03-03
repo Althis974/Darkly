@@ -1,0 +1,8 @@
+in http://192.168.56.103/index.php?page=survey
+
+
+inspect the page and update value in select balise
+
+# RESOLUTION
+
+In the server check the form if the value is valid.
